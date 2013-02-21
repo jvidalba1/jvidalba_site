@@ -1,0 +1,8 @@
+<center>
+<h3>
+	<%= link_to 'Facebook', "http://www.facebook.com/jvidalba"%>
+	<%= link_to '@jvidalba', "http://www.twitter.com/jvidalba"%>
+	Email: jvidalba@gmail.com
+   BBM: 29537AB3
+</h3>
+</center>
