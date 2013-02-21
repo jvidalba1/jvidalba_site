@@ -2,8 +2,42 @@
  
 /* universal */
 
+#icons a {
+    margin-top: 10px;
+    background-image: url("socialmedia_sprite.png");
+    background-repeat: no-repeat;
+    position: relative;
+    height: 32px;
+    width: 60px;
+    display: block;
+    float: left;
+    margin-right: -1em;
+
+}
+
+#icons a.linkedin {
+    background-position: 0px 0px;
+
+}
+#icons a.twitter {
+    background-position: 0px -32px;
+}
+
+#icons a.google {
+    background-position: 0px -64px;
+}
+#icons a.github {
+    background-position: 0px -96px;
+}
+#icons a.email {
+    background-position: 0px -160px;
+}
+
+
+
 .gravatar{
 	padding-left: 75px;
+
 }
 
 .changePhoto{
@@ -62,8 +96,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-top: -190px;
   text-align: center;
+  float:left;
+    margin-left: 60px;
+
 }
 
 h2 {
@@ -148,18 +185,29 @@ td.main{
 }
 
 td.sidebar{
-	width: 30%;
-	padding: 1em;
+	width: 70%;
+	padding: 3em;
 	vertical-align: top;
 	background: #C0C0C0;
+    float:left;
+
+
 }
 
 .profile img.gravatar{
 	border: 1px solid #999;
 	margin-bottom: -15px;
+
 }
 
+
+
 /* forms */
+
+.home_photo{
+    float: left;
+
+}
 
 input, textarea, select, .uneditable-input {
     border: 1px solid #bbb;
@@ -168,6 +216,8 @@ input, textarea, select, .uneditable-input {
     margin-bottom: 15px;
 
 }
+
+
 
 input {
     height: auto !important;
@@ -187,5 +237,6 @@ li {
     border-bottom: 1px solid $grayLighter;
 }
     }
+
 
 
