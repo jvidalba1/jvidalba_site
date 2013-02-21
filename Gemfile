@@ -5,7 +5,6 @@ gem 'rails', '3.2.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'gravatar_image_tag'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
@@ -26,6 +25,13 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :production do
+  gem 'pg', '0.12.2'
+end
+group :development, :test do
+  gem 'sqlite3'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
