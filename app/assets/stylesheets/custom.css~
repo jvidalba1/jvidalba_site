@@ -1,0 +1,253 @@
+@import "bootstrap";
+ 
+/* universal */
+
+#icons a {
+    margin-top: 10px;
+    background-image: url("socialmedia_sprite.png");
+    background-repeat: no-repeat;
+    position: relative;
+    height: 32px;
+    width: 60px;
+    display: block;
+    float: left;
+    margin-right: -1em;
+
+}
+
+#icons a.linkedin {
+    background-position: 0px 0px;
+
+}
+#icons a.twitter {
+    background-position: 0px -32px;
+}
+
+#icons a.google {
+    background-position: 0px -64px;
+}
+#icons a.github {
+    background-position: 0px -96px;
+}
+#icons a.email {
+    background-position: 0px -160px;
+}
+#icons a.face_logo {
+	background-color: transparent;
+		
+}
+
+
+
+.gravatar{
+	padding-left: 75px;
+
+}
+
+.changePhoto{
+	padding-left: 123px;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+
+    padding-top: 10%;
+    width:100%;
+    height: 100%;
+    position:absolute;
+
+    background-image: linear-gradient(bottom, rgb(250,249,247) 31%, rgb(161,159,161) 74%);
+    background-image: -o-linear-gradient(bottom, rgb(250,249,247) 31%, rgb(161,159,161) 74%);
+    background-image: -moz-linear-gradient(bottom, rgb(250,249,247) 31%, rgb(161,159,161) 74%);
+    background-image: -webkit-linear-gradient(bottom, rgb(250,249,247) 31%, rgb(161,159,161) 74%);
+    background-image: -ms-linear-gradient(bottom, rgb(250,249,247) 31%, rgb(161,159,161) 74%);
+
+    background-image: -webkit-gradient(
+        linear,
+        right bottom,
+        right top,
+        color-stop(0.31, rgb(250,249,247)),
+        color-stop(0.74, rgb(161,159,161))
+    );
+
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-top: -190px;
+  text-align: center;
+  float:left;
+    margin-left: 60px;
+    
+
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.alert-success{
+    text-align: center;
+    font-size: 200%;
+}
+
+/* header */
+.logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav{
+	border-bottom: 1px solid #FFFFFF;
+	margin-top: 55px;
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}  
+
+footer a:hover { 
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+/* user show page */
+
+table.profile {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+td.main{
+	width: 70%;
+	padding: 1em,
+}
+
+td.sidebar{
+	width: 70%;
+	padding: 3em;
+	vertical-align: top;
+	background: #C0C0C0;
+    float:left;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+
+}
+
+.profile img.gravatar{
+	border: 1px solid #999;
+	margin-bottom: -15px;
+
+}
+
+
+
+/* forms */
+
+.home_photo{
+    float: left;
+
+}
+
+input, textarea, select, .uneditable-input {
+    border: 1px solid #bbb;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+
+
+input {
+    height: auto !important;
+}
+
+/* users index */
+
+.users {
+    list-style: none;
+    margin: 0;
+}
+li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid grayLighter;
+&:last-child {
+    border-bottom: 1px solid $grayLighter;
+}
+    }
+
+
+
