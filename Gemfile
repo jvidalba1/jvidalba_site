@@ -31,6 +31,7 @@ group :production do
 end
 group :development, :test do
   gem 'sqlite3'
+  gem 'annotate', '2.5.0'
 end
 
 # To use ActiveModel has_secure_password

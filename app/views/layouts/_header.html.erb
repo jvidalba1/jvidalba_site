@@ -3,22 +3,20 @@
     <div class="container">
       <div class="resume">
         <p id="icons">
-        <%# link_to "","http://facebook.com/jvidalba",:class => "face",:target => "_blank" %> 
             <%= link_to "","http://www.linkedin.com/profile/view?id=65076303&trk=hb_tab_pro_top",:class => 'linkedin', :target => "_blank" %>
             <%= link_to "","http://twitter.com/jvidalba",:class => "twitter",:target => "_blank" %>
             <%= link_to "","https://plus.google.com/112807639291183118621",:class => "google" ,:target => "_blank" %>
             <%= link_to "","https://github.com/jvidalba1",:class => "github" ,:target => "_blank"%>
-            <%= link_to "","mailto:jvidalba@gmail.com",:class => "email",:target => "_blank" 
-             %>
-             <%= link_to image_tag("facebook-logoE.png", :border => 0),"http://facebook.com/jvidalba", :class => "face_logo", :target => "_blank"%>
+            <%= link_to "","mailto:jvidalba@gmail.com",:class => "email",:target => "_blank" %>
+            <%= link_to image_tag("facebook-logoE.png", :border => 0),"http://facebook.com/jvidalba", :class => "face_logo", :target => "_blank"%>
             
         </p>
       </div>
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Inicio", root_path %></li>
-          <li><%= link_to "Contacto", contact_path %></li>
-          <li><%= link_to "Blog", "#" %></li>
+          <li><%= link_to "Contacto", users_path %></li>
+          <li><%= link_to "Github", "#" %></li>
         </ul>
       </nav>
     </div>

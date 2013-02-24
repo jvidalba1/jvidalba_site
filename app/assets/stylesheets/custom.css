@@ -2,6 +2,20 @@
  
 /* universal */
 
+.comentario{
+    border: solid black 1px;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.elemento{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 #icons a {
     margin-top: 10px;
     background-image: url("socialmedia_sprite.png");

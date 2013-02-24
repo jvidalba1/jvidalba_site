@@ -1,0 +1,35 @@
+
+<div>
+  <center>
+  <table>
+    <h3>Contactame</h3>
+    <tr >
+      <td>
+        <%= form_for @user do |f| %>
+            <%= f.label :name, 'Nombre' %><br/>
+            <%= f.text_field :name, :autocomplete => :off%>
+            </td>
+            </tr>
+            <tr>
+              <td>
+                <%= f.label :email, 'Email' %><br/>
+                <%= f.text_field :email, :autocomplete => :off%>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <%= f.label :content, 'Mensaje' %><br/>
+                <%= f.text_area :content, :rows => 8, :cols => 60%>
+              </td>
+            </tr>
+            <tr>
+              <div class="limpiarB">
+                <td><%= f.label  'Limpiar', :class => "btn", :onclick => "oelo(new_user)" %>
+              </div>
+                <%= f.submit  'Aceptar', :class => "btn btn-primary" %>
+              </td>
+            </tr>
+        <% end %>
+        </table>
+  </center>
+</div>

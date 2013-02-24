@@ -1,18 +1,15 @@
 class PagesController < ApplicationController
   # To change this template use File | Settings | File Templates.
-
-  def home
-    @title = "Inicio"
+  def index
 
   end
 
-  def contact
-    @title = "Contacto"
-	
-	 respond_to do |format|
-	 	format.html
-	 	format.js
-	 end
+  def home
+    @title = "Inicio"
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
 end

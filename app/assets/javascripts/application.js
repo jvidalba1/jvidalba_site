@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 
-document.write("<script type='text/javascript' src='bootstrap.js'></scr"+"ipt>");
+function oelo(form)
+{
+    form.reset();
+}
