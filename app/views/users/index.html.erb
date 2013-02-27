@@ -2,10 +2,25 @@
 <div>
   <center>
   <table>
-    <h3>Contactame</h3>
     <tr >
       <td>
+        <% if @user.errors.any? %>
+            <div id="error_explanation">
+              <div class="alert alert-error">
+                El formulario contiene <%= pluralize(@user.errors.count, "errore") %>.
+              </div>
+              <ul>
+                <% @user.errors.full_messages.each do |error_msg| %>
+                    <li>
+                      <%= error_msg %>
+                    </li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+
         <%= form_for @user do |f| %>
+
             <%= f.label :name, 'Nombre' %><br/>
             <%= f.text_field :name, :autocomplete => :off%>
             </td>

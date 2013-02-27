@@ -1,0 +1,51 @@
+<div id = "user">
+  <div class="user_info">
+    <%= image_tag @response1["avatar_url"], :class => "image", :title => @response1["name"] %>
+    <div class="user_details">
+      <hr>
+      <table>
+        <tr>
+          <th>Email</th>
+          <td><%= @response1["email"] %></td>
+        </tr>
+        <tr>
+          <th>Location</th>
+          <td><%= @response1["location"] %></td>
+        </tr>
+        <tr>
+          <th>GitHub User</th>
+          <td><%= link_to @response1["login"],@response1["url"] %></td>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+
+  <div class="user_repos">
+    <hr >
+    <h2>GitHub Repos (<%=@response.count %>)</h2>
+    <% @response.reverse.each do |n|  %>
+        <% url = n["url"] %>
+        <% url = url.gsub("api.", "") %>
+        <% url = url.gsub("repos/", "") %>
+        <div class="repo">
+          <div class="title">
+            <%= link_to n["name"],url, :target => '_blank', :class => "name" %>
+            <%= n["language"]  %>
+          </div>
+          <div class="description">
+            <p class="desc"> <%= n["description"] %></p>
+            <p class="updated">Ultima actualización: <%=time_ago_in_words(n["updated_at"]) %></p>
+          </div>
+        </div>
+    <%end%>
+  </div>
+
+  <div class="user-gist">
+    <script src="https://gist.github.com/2495749.js?file=gistfile1.rb"></script>
+    <script src="https://gist.github.com/1648004.js?file=gistfile1.md"></script>
+  </div>
+
+  <hr class="ajustar" style="margin: auto; clear: both;">
+</div>

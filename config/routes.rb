@@ -1,9 +1,9 @@
 JvidalbaSite::Application.routes.draw do
 
-  resources :users
-
 
   get "users/index"
+  get "users/jvidalba1"
+  resources :users
 
   root :to => 'pages#home'
   match '/contact',		:to => 'pages#contact'

@@ -5,6 +5,7 @@ gem 'rails', '3.2.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'httparty'
 gem 'gravatar_image_tag'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'

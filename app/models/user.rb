@@ -17,10 +17,14 @@ class User < ActiveRecord::Base
   EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
 
-  validates :name, :presence => true, :length   => {:maximum => 50}
-  validates :email, :presence => true,
-            :format     => {:with => EMAIL_REGEX},
-            :uniqueness => {:case_sensitive => false}
-  validates :content, :presence => true, :length => {:within => 10..180}
+  validates :name,    :presence    => { :message => " -Debes ingresar un nombre"},
+                      :length   => {:maximum => 30, :message => " -Nombre muy largo" }
+
+
+  validates :email,   :presence     => { :message => " -Debes ingresar un email"},
+                      :format       => {:with => EMAIL_REGEX, :message => " -Formato de email invalido"}
+
+  validates :content, :presence => { :message => " -Debes ingresar el mensaje"},
+                      :length => {:within => 10..180, :message => " -El mensaje debe tener de 10 a 180 caracteres"}
 
 end
