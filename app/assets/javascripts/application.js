@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 
+
 $(function(){
     setTimeout($(".alert-success").fadeOut(5500),9500);
 });

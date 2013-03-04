@@ -2,7 +2,6 @@
   <div class="user_info">
     <%= image_tag @response1["avatar_url"], :class => "image", :title => @response1["name"] %>
     <div class="user_details">
-      <hr>
       <table>
         <tr>
           <th>Email</th>
@@ -24,7 +23,7 @@
 
   <div class="user_repos">
     <hr >
-    <h2>GitHub Repos (<%=@response.count %>)</h2>
+    <h2>Public GitHub Repos (<%=@response.count %>) </h2>
     <% @response.reverse.each do |n|  %>
         <% url = n["url"] %>
         <% url = url.gsub("api.", "") %>
@@ -41,11 +40,4 @@
         </div>
     <%end%>
   </div>
-
-  <div class="user-gist">
-    <script src="https://gist.github.com/2495749.js?file=gistfile1.rb"></script>
-    <script src="https://gist.github.com/1648004.js?file=gistfile1.md"></script>
-  </div>
-
-  <hr class="ajustar" style="margin: auto; clear: both;">
 </div>

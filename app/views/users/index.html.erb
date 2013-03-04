@@ -1,4 +1,10 @@
 
+<script>
+    function oelo(){
+
+        document.getElementById("new_user").reset();
+    }
+</script>
 <div>
   <center>
   <table>
@@ -39,7 +45,7 @@
             </tr>
             <tr>
               <div class="limpiarB">
-                <td><%= f.label  'Limpiar', :class => "btn", :onclick => "oelo(new_user)" %>
+                <td><%= f.label  'Limpiar', :class => "btn", :onclick => "oelo()" %>
               </div>
                 <%= f.submit  'Aceptar', :class => "btn btn-primary" %>
               </td>
