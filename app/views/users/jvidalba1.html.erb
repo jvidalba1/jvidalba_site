@@ -23,7 +23,7 @@
 
   <div class="user_repos">
     <hr >
-    <h2>Public GitHub Repos (<%=@response.count %>) </h2>
+    <h2>Repositorios públicos (<%= @response.count %>) </h2>
     <% @response.reverse.each do |n|  %>
         <% url = n["url"] %>
         <% url = url.gsub("api.", "") %>
